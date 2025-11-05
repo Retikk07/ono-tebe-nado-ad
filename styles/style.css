@@ -180,7 +180,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 334px;
   height: 596px;
   justify-content: space-between;
