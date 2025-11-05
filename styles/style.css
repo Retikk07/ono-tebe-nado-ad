@@ -1,1 +1,364 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  width: 1100px;
+  height: 293px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__menu {
+  justify-self: start;
+  width: 391.48px;
+  height: 22px;
+  line-height: 1;
+  margin: 133px 0 138px 50px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+  height: 100%;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+
+.header__logo {
+  width: 148px;
+  height: 105px;
+  margin: 92px 184px 96px 36.52px;
+}
+
+.header__address {
+  justify-self: end;
+  line-height: 24.3px;
+  width: 240px;  
+  height: 98px;
+  margin: 95px 50px 100px 0;
+}
+.address__underline{
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #000000;
+}
+
+.cover {
+  position: relative;
+  padding: 165px 50px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  height: 757px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000000;
+}
+
+.cover__title {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: bold;
+  width: 1000px; 
+  height: 385px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text {
+  display: block;
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+  margin-right: -15px;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 78px;
+  padding-top: 106px;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+  font-style: 400;
+  color: #FFFFFF;
+  line-height: 28px;
+  width: 637px;
+  height: 28px;
+}
+
+.bet-button {
+  all: initial;
+  font-family: Raleway;
+  font-style: medium;
+  width: 256px;
+  height: 51px; 
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lots {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 180px;
+  width: 1052px;
+  height: 723px;
+}
+
+.lots__heading {
+  width: 121px;
+  height: 47px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-left: 40px ;
+}
+
+.lots__card-list{
+  all: initial;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  justify-content: center;
+  margin: 27px 0;
+}
+
+.lots__card-list-item{
+  height: 100%;
+}
+
+.card-link{
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 334px;
+  height: 596px;
+  justify-content: space-between;
+  position: relative;
+}
+.card_type_film{
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book{
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture{
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title{
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 22px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #FFFFFF;
+  text-decoration-style: solid;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-right: 40px;
+  z-index: 1;
+}
+
+.card__text{
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  padding-right: 40px;
+  z-index: 1;
+}
+
+.lots__look-more-link{
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  text-decoration: none;
+  width: 192px;
+  height: 23px;
+  margin-left: 40px;
+  margin-top: 40px;
+  border-bottom: 1px solid;
+}
+
+.about{
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 120px;
+  height: 595px;
+  width: 1052px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+}
+
+.about__logo{
+  margin-top: 35px;
+  margin-left: 47px;
+  width: 240px;
+  height: 240px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 120px;
+}
+
+.about__logo-image{
+  width: 148px;
+  height: 114px;
+}
+
+.about__column{
+  margin-bottom: 13px;
+  margin-top: 133px;
+}
+
+.about__title{
+  width: 291px;
+  height: 47px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 3px;
+}
+
+.about__text__first{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  margin-top: 100px;
+  margin-right: 5px;
+  color: #000000;
+}
+
+.about__text__second{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.footer {
+  margin-top: 180px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  height: 180px;
+  width: 1100px;
+}
+
+.footer__address{
+  width: 264.57px;
+  height: 98px;
+  margin-left: 50px;
+  margin-bottom: 82px;
+  justify-self: start;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
+.footer__menu {
+  width: 163.64px;
+  height: 64px;
+  margin: 1px, 467.5px, 115px, 468.6px;
+}
+
+.footer__menu-list{
+  list-style: none;
+}
+.footer__menu-list-item{
+  display: flex;
+  justify-content: center;
+}
+.footer__menu-link{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  justify-content: end;
+  margin-right: 50px;
+  margin-bottom: 131px;
+  margin-top: 1px;
+}
+
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
+}
