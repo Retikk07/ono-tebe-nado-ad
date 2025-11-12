@@ -82,7 +82,6 @@
   z-index: 1;
   color: #fff;
   text-transform: uppercase;
-  font-style: bold;
   width: 1000px;
   height: 385px;
   font-size: 100px;
@@ -127,7 +126,6 @@
 .bet-button {
   all: initial;
   font-family: Raleway;
-  font-style: medium;
   width: 256px;
   height: 51px;
   color: #FFFFFF;
@@ -156,7 +154,6 @@
   width: 121px;
   height: 47px;
   font-weight: 700;
-  font-style: bold;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
@@ -204,7 +201,6 @@
 .card__title {
   font-family: Raleway;
   font-weight: 700;
-  font-style: bold;
   font-size: 22px;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -281,7 +277,6 @@
   width: 291px;
   height: 47px;
   font-weight: 700;
-  font-style: bold;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
